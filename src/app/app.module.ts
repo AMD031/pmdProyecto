@@ -9,7 +9,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { AddproveeComponent } from './proveedores/addprovee/addprovee.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -30,7 +30,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
 
   
